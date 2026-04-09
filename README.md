@@ -1,50 +1,41 @@
-# Welcome to your Expo app 👋
+# Cibergu-2026-Fullstack
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Proyecto: Mascota Saludable
 
-## Get started
+## Integrantes
+Lucia Romero Adalia
 
-1. Install dependencies
+Nicolas Mitura 
 
-   ```bash
-   npm install
-   ```
+David Monasterio 
 
-2. Start the app
+Nicole Gonzalez
 
-   ```bash
-   npx expo start
-   ```
+## Descripción
 
-In the output, you'll find options to open the app in a
+Una app móvil para ayudar a las personas a mantener hábitos saludables diarios. El usuario marca los hábitos que ha cumplido cada día y una mascota (un gato) cambia de estado según su constancia.
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## Tecnologias usadas
 
-## Get a fresh project
+React Native - framework para hacer apps móviles con JavaScript 
 
-When you're ready, run:
+Expo - herramienta que simplifica el desarrollo con React Native, sin configuraciones complejas 
 
-```bash
-npm run reset-project
-```
+AsyncStorage - sistema de guardado de datos local en el móvil, los datos no se pierden al cerrar la app 
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+expo-notifications - librería para enviar notificaciones a horas concretas
 
-## Learn more
+## Uso
 
-To learn more about developing your project with Expo, look at the following resources:
+El usuario puede marcar 5 hábitos diarios: beber agua, actividad física, dormir bien, comer fruta o verdura, y tomar medicación. 
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+Puntos: Cada hábito suma puntos. Se muestra la puntuación del día y la puntuación total acumulada. Mascota gato: Tiene 6 estados distintos según cuántos hábitos se han completado, desde triste (0 hábitos) hasta perfecto (5 hábitos).Incluye una barra de progreso visual. 
 
-## Join the community
+Notificaciones: La app manda recordatorios automáticos a horas concretas del día para que el usuario no olvide sus hábitos ni su medicación. 
 
-Join our community of developers creating universal apps.
+Persistencia de datos: Todo se guarda en el dispositivo. Si cierras la app y la vuelves a abrir, los datos siguen ahí. Cada día se resetean los hábitos pero los puntos totales se acumulan. Historial: Cada día que pasa queda guardado con sus hábitos completados y puntos obtenidos.
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
